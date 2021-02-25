@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import { AfricaScreen } from '../components/AfricaScreen'
 import { AmericaScreen } from '../components/AmericaScreen'
@@ -11,12 +11,12 @@ import { OceaniaScreeen } from '../components/OceaniaScreeen'
 
 export const DashboardRoutes = () => {
   return (
-    <div className='dash'>
+   
+     <div className='dash'>
       <Navbar />
-
       <div>
         <Switch>
-          <Route exact path='/' component={ Home } />
+          <Route exact path='/world' component={ Home } />
           <Route exact path='/africa' component={ AfricaScreen } />
           <Route exact path='/america' component={ AmericaScreen } />
           <Route exact path='/asia'  component={ AsiaScreen } />
@@ -25,6 +25,10 @@ export const DashboardRoutes = () => {
           <Route exact path='/flag/:flagName' component={ FlagScreen }/>
         </Switch>
       </div>
+
     </div>
+   
+
+   
   )
 }

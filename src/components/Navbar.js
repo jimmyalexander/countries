@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { mdiFormatLineWeight, mdiWindowClose} from '@mdi/js';
 import Icon from './icons/iconos';
+import { Principal } from './Principal';
 
 export const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -18,8 +19,10 @@ export const Navbar = () => {
   return (
     <div>
       <div className='container_navbar'>
-        <div>
-          <h1>FLAGS</h1>
+        <div className='title_flag'>
+          <Link  to='/'>
+           <h1>FLAGS</h1>
+          </Link>
         </div>
         <div onClick={ handleBurguer} className='container_icon-hamburguer'>
           <Icon icon={mdiFormatLineWeight} />
@@ -28,7 +31,7 @@ export const Navbar = () => {
            <div  onClick={ handleExit } className='container_icon-exit'>
             <Icon id='icon' icon={mdiWindowClose} color={'white'}/>
            </div>
-          <Link  to='/' >Home</Link>
+          <NavLink  to='/world' >World</NavLink>
           <NavLink  to='/africa'  >Africa</NavLink>
           <NavLink  to='/america'  >America</NavLink>
           <NavLink  to='/asia'  >Asia</NavLink>
@@ -36,6 +39,7 @@ export const Navbar = () => {
           <NavLink  to='/oceania'  >Oceania</NavLink>
         </nav>
       </div>
+      <Principal />
     </div>
   )
 }

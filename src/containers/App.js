@@ -1,18 +1,12 @@
-import React, {  useState } from 'react'
-
+import React from 'react'
+import { AppRouter } from '../routers/AppRouter'
 import '../assets/style/App.scss';
-import { UserContext } from './UserContext';
 
-export const App = () => {
-  
+export const App= () => {
   return (
-    <UserContext.Provider value={
-        {
-          
-        }
-    }>
-
-      
-    </UserContext.Provider>
+   
+     <div>
+      <AppRouter />
+    </div>
   )
 }

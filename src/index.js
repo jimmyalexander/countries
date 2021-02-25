@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { App } from './containers/App';
-import { AppFlags } from './containers/AppFlags';
 
 
 ReactDOM.render(
-    <AppFlags />,
+    <App />,
   document.getElementById('root')
 );
 

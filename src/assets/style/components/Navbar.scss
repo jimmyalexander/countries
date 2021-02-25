@@ -6,6 +6,22 @@
   margin: 0 20px;
   position: relative;
   height: 100%;
+  .title_flag{
+    margin-top: 5px;
+    background: #ff5555;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    height: 3em;
+    a{
+      text-decoration: none;
+      color: white;
+    }
+    h1{
+      margin: 0;
+      padding: 10px;
+    }
+  }
   .navbar{
     background: #ff5555;
     padding: 10px 0px;
@@ -41,7 +57,9 @@
     display: none;
   }
 }
-
+.desaparece{
+  display: none;
+}
 @media (min-width: 960px){
   .container_navbar{
     .container_icon-hamburguer{
