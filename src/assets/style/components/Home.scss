@@ -1,0 +1,113 @@
+body{
+  font-family: 'Akaya Kanadaka', cursive;
+  color: #ff5555;
+  height: 100%;
+  margin: 0;
+}
+.dash{
+  overflow: hidden;
+}
+.title_home{margin: 20px;
+}
+.container_home{
+  background: #ff5555;
+  color: white;
+  border-radius: 5px;
+  margin: 50px 20px;
+  .home{
+    display: flex;
+    border-radius: 5px 5px 5px 5px;
+    flex-direction: column;
+    align-items: center;
+    border: 0.5px solid #ccc;
+
+  }
+  .container_img{
+    margin: 0;
+    width: 100%;
+    height: 40%;
+    img{
+      height: 40%;
+      width: 100%;
+      border-radius: 5px 5px 0 0;
+    }
+  }
+  .container_home-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    p{
+      padding: 0 20px;
+    }
+    a{
+      text-decoration: none;
+      color: white;
+      padding: 0 20px;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+
+@media (min-width: 960px){
+  .container_card{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation-name: opaci;
+    animation-duration: 1s;
+  }
+    .container_home{
+      width: 20%;
+      perspective: 700px;
+      box-shadow: 3px 3px 6px 6px #bbb;
+      transition: all .7s;
+      margin: 25px;
+      .home{
+        border: none;
+        .container_img{
+          background-color: #fcf1f1;
+          border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;
+          border-top: 1px solid #ccc;
+          border-bottom: none;
+          border-radius: 5px;
+          text-align: center;
+          img{
+            padding: 10px;
+            width: 90%;
+            height: 120px;
+          }
+        }
+        .container_home-data{
+          p{
+            margin: 5px 0;
+            padding: 0px 15px;
+          }
+          a{
+            margin: 5px 0;
+            padding:  0 15px;
+            width: 25%;
+          }
+          
+        }
+      }
+    }
+    .container_home:hover{
+      transform: scale(1.3);
+      transition: all .7s;
+    }
+  }
+
+@keyframes scale{
+  0%{ 
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.2);
+  }
+}
