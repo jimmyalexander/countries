@@ -5,12 +5,9 @@ import asia2 from '../assets/static/asia2.jpg';
 import asia3 from '../assets/static/asia3.jpg';
 
 export const Principal = () => {
- const l = useLocation()
- if( l.pathname !== '/'){
-   console.log('cambio')
- }
+  const lo =useLocation();
   return (
-    <div className={ l.pathname !== '/' && l.pathname !== '/countries'  ? 'desaparece': 'container_principal'}>
+    <div className={ lo.pathname !== '/' && lo.pathname !== '/countries' ? 'desaparece' : 'container_principal'}>
       <div className='container_title'>
         <h1>Home</h1>
       </div>

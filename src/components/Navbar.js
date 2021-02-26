@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import { mdiFormatLineWeight, mdiWindowClose} from '@mdi/js';
 import Icon from './icons/iconos';
-import { Principal } from './Principal';
 
 export const Navbar = () => {
   const [active, setActive] = useState(false);
-
+  const loca = useLocation();
   const handleBurguer = () => {
     setActive(!active);
   }
@@ -15,10 +14,10 @@ export const Navbar = () => {
     setActive(false);
     
   }
-  console.log(active)
   return (
+    
     <div>
-      <div className='container_navbar'>
+      <div className={loca.pathname? 'container_navbar' : 'desaparece'}>
         <div className='title_flag'>
           <Link  to='/'>
            <h1>FLAGS</h1>
@@ -39,7 +38,6 @@ export const Navbar = () => {
           <NavLink  to='/oceania'  >Oceania</NavLink>
         </nav>
       </div>
-      <Principal />
     </div>
   )
 }

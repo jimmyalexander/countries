@@ -8,6 +8,7 @@ import { FlagScreen } from '../components/FlagScreen'
 import { Home } from '../components/Home'
 import { Navbar } from '../components/Navbar'
 import { OceaniaScreeen } from '../components/OceaniaScreeen'
+import { Principal } from '../components/Principal'
 
 export const DashboardRoutes = () => {
   return (
@@ -25,7 +26,7 @@ export const DashboardRoutes = () => {
           <Route exact path='/flag/:flagName' component={ FlagScreen }/>
         </Switch>
       </div>
-
+      <Principal />
     </div>
    
 

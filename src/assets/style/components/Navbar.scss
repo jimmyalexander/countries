@@ -1,11 +1,10 @@
 .container_navbar{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 0 10px;
+  height: 90vh;
   margin: 0 20px;
   position: relative;
-  height: 100%;
+  overflow: hidden;
+  z-index: 1;
   .title_flag{
     margin-top: 5px;
     background: #ff5555;
@@ -27,13 +26,13 @@
     padding: 10px 0px;
     border-radius: 5px;
     position: absolute;
-    height: 100vh;
-    top: 20%;
+    height: 100%;
+    top: 10%;
     right: -70%;
     width: 40%;
     transition: right;
     transition-duration: 1s;
-    z-index: 1;
+    z-index: 3;
     
     .container_icon-exit{
       margin-left: 10px;
@@ -62,6 +61,8 @@
 }
 @media (min-width: 960px){
   .container_navbar{
+    height: 100%;
+    display: flex;
     .container_icon-hamburguer{
       display: none;
     }
