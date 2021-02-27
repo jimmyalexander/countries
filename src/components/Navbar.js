@@ -19,7 +19,7 @@ export const Navbar = () => {
     <div>
       <div className={loca.pathname? 'container_navbar' : 'desaparece'}>
         <div className='title_flag'>
-          <Link  to='/'>
+          <Link  to='/countries'>
            <h1>FLAGS</h1>
           </Link>
         </div>
