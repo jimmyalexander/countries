@@ -6,6 +6,7 @@ import { AsiaScreen } from '../components/AsiaScreen'
 import { EuropeScreen } from '../components/EuropeScreen'
 import { FlagScreen } from '../components/FlagScreen'
 import { Home } from '../components/Home'
+import { Layout } from '../components/Layout'
 import { Navbar } from '../components/Navbar'
 import { OceaniaScreeen } from '../components/OceaniaScreeen'
 import { Principal } from '../components/Principal'
@@ -13,20 +14,21 @@ import { Principal } from '../components/Principal'
 export const DashboardRoutes = () => {
   return (
    
-     <div className='dash'>
-      <Navbar />
+     <div>
       <div>
         <Switch>
-          <Route exact path='/world' component={ Home } />
-          <Route exact path='/africa' component={ AfricaScreen } />
-          <Route exact path='/america' component={ AmericaScreen } />
-          <Route exact path='/asia'  component={ AsiaScreen } />
-          <Route exact path='/europe'  component={ EuropeScreen } />
-          <Route exact path='/oceania'  component={ OceaniaScreeen } />
-          <Route exact path='/flag/:flagName' component={ FlagScreen }/>
+          <Layout >
+          <Route exact path='/countries' component={Principal} />
+          <Route exact path='/countries/world' component={ Home } />
+          <Route exact path='/countries/africa' component={ AfricaScreen } />
+          <Route exact path='/countries/america' component={ AmericaScreen } />
+          <Route exact path='/countries/asia'  component={ AsiaScreen } />
+          <Route exact path='/countries/europe'  component={ EuropeScreen } />
+          <Route exact path='/countries/oceania'  component={ OceaniaScreeen } />
+          <Route exact path='/countries/flag/:flagName' component={ FlagScreen }/>
+          </Layout>
         </Switch>
       </div>
-      <Principal />
     </div>
    
 

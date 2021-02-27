@@ -6,7 +6,7 @@ export const Home = () => {
   const { data } = useFetch('https://restcountries.eu/rest/v2/all');
 
   return (
-    <div >
+    <div className='container_world' >
 
       <div className='title_home'>
         <h1>World</h1>

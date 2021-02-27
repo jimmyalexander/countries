@@ -9,8 +9,8 @@ export const FlagScreen = () => {
    const flag = GetFlagByName(flagName);
    
   return (
-    <div className='container_flag-screen'>
-      <Link to='' className='button_back' >Back</Link>
+    <div className='container_flag-screen container_world'>
+      <Link to='/countries' className='button_back' >Back</Link>
 
          {
            flag === undefined ? <Loading />:

@@ -1,117 +1,38 @@
-.container_principal{
-  position: absolute;
-  top: 0;
-}
-.container_title{
-  margin-left: 2em;
-}
-.container_slider{
-  padding: 1em;
-  display: flex;
-  justify-content: center;
-  background: #fcf1f1;
-  .slider{
-    display: flex;
-    position: relative;
-    overflow: hidden;
-    width: 450px;
-    border-radius: 5px;
-    .container_asia1, .container_asia2, .container_asia3{
-      position: relative;
-      animation-name: tras;
-      animation-duration: 50s;
-      animation-iteration-count: infinite;
-      h2{
-        margin-left: 1em;
-        position: absolute;
-        bottom: .5em;
-        color: white;
+.carousel{
+  height: 100vh;
+
+  .carousel-inner{
+    height: 100%;
+
+    .carousel-item{
+      height: 100%;
+
+      img{
+        height: 100vh;
+        opacity: 0.8;
       }
-    }
-    figure{
-      margin: 0;
-    }
-    figure img{
-      width: auto;
-      height: 300px;
-    }
-    
-  }
-}
 
-@keyframes tras{
-  0%{
-    transform: translateX(0px);
-  }25%{
-    transform: translateX(-450px);
-  }
-  50%{
-    transform: translateX(-900px);
-  }
-  75%{
-    transform: translateX(-450px);
-  }
-  100%{
-    transform: translateX(0px);
-  }
-}
-
-
-@media (min-width: 960px){
-  .container_principal{
-    position: relative;
-  }
-  .container_slider{
-    width: 90vw;
-    justify-content: center;
-    margin: auto;
-    height:70vh;
-    display: flex;
-    justify-content: center;
-    .slider{
-      display: flex;
-      width: 90vw;
-      height: inherit;
-      overflow: hidden;
-      .container_asia1, .container_asia2, .container_asia3{
-        position: relative;
-        animation-name: tras;
-        animation-duration: 50s;
-        animation-iteration-count: infinite;
-        h2{
-          margin-left: 1em;
-          position: absolute;
-          bottom: 2em;
-          color: white;
+      .carousel-caption{
+        h5{
+          text-shadow: 2px 2px 5px black;
+        }
+        p{
+          text-shadow: 2px 2px 5px black;
         }
       }
-      figure{
-        width: 100%;       
-        height: 100%;
-        margin: 0;
-      }
-      figure img{
-        width: 90vw;       
-        height: 100%;
-      }
-      
     }
   }
+}
+@media (min-width: 960px){
+  .carousel{
+    height: 100vh;
   
-  @keyframes tras{
-    0%{
-      transform: translateX(0px);
-    }25%{
-      transform: translateX(-90vw);
-    }
-    50%{
-      transform: translateX(-180vw);
-    }
-    75%{
-      transform: translateX(-90vh);
-    }
-    100%{
-      transform: translateX(0px);
+    .carousel-inner{
+      height: 100%;
+  
+      .carousel-item{
+        height: 100%;
+      }
     }
   }
 }

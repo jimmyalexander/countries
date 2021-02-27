@@ -8,7 +8,7 @@ export const AppRouter = () => {
     <Router >
       <div>
         <Switch>
-          <Route path='/' component={ DashboardRoutes } />
+          <Route path='/countries' component={ DashboardRoutes } />
         </Switch>
       </div>
     </Router>

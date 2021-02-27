@@ -6,7 +6,7 @@ export const AsiaScreen = () => {
   const { data } = useFetch('https://restcountries.eu/rest/v2/region/asia');
 
   return (
-    <div>
+    <div className='container_world'>
       <div className='title_home'>
         <h1>AsiaScreen</h1>
       </div>

@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { useFetch } from '../CustomHooks/useFetch';
 
 export const FlagCard = ({
   name,
@@ -23,7 +22,7 @@ export const FlagCard = ({
                     <p><strong>Capital: </strong>{capital}</p>
                     <p><strong>Region: </strong>{region}</p>
                     <p><strong>Population: </strong>{population}</p>
-                    <Link to={`/flag/${name}`} >Ver Mas..</Link>
+                    <Link to={`/countries/flag/${name}`} >Ver Mas..</Link>
                   </div>
                 </div>
               </div>

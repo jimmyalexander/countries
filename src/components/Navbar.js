@@ -24,18 +24,18 @@ export const Navbar = () => {
           </Link>
         </div>
         <div onClick={ handleBurguer} className='container_icon-hamburguer'>
-          <Icon icon={mdiFormatLineWeight} />
+          <Icon icon={mdiFormatLineWeight} color={'white'} />
         </div>
         <nav className={ active  ? 'navbar is-active': 'navbar'}>
            <div  onClick={ handleExit } className='container_icon-exit'>
             <Icon id='icon' icon={mdiWindowClose} color={'white'}/>
            </div>
-          <NavLink  to='/world' >World</NavLink>
-          <NavLink  to='/africa'  >Africa</NavLink>
-          <NavLink  to='/america'  >America</NavLink>
-          <NavLink  to='/asia'  >Asia</NavLink>
-          <NavLink  to='/europe'  >Europe</NavLink>
-          <NavLink  to='/oceania'  >Oceania</NavLink>
+          <Link  to='/countries/world' >World</Link>
+          <Link  to='/countries/africa'  >Africa</Link>
+          <Link  to='/countries/america'  >America</Link>
+          <Link  to='/countries/asia'  >Asia</Link>
+          <Link  to='/countries/europe'  >Europe</Link>
+          <Link  to='/countries/oceania'  >Oceania</Link>
         </nav>
       </div>
     </div>

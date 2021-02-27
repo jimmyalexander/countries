@@ -1,13 +1,16 @@
 .container_navbar{
-  padding: 0 10px;
-  height: 90vh;
-  margin: 0 20px;
-  position: relative;
+  position: fixed;
   overflow: hidden;
-  z-index: 1;
+  display: block;
+  z-index: 1000;
+  height: 100vh;
+  width: 100%;
+  .container_icon-hamburguer{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+  }
   .title_flag{
-    margin-top: 5px;
-    background: #ff5555;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -22,28 +25,33 @@
     }
   }
   .navbar{
-    background: #ff5555;
     padding: 10px 0px;
     border-radius: 5px;
+    backdrop-filter: blur(20px);
+    height: 100vh;
     position: absolute;
-    height: 100%;
-    top: 10%;
-    right: -70%;
+    top: 0%;
+    right: -60%;
     width: 40%;
     transition: right;
     transition-duration: 1s;
     z-index: 3;
+    display: flex;
+    flex-direction: column;
     
     .container_icon-exit{
       margin-left: 10px;
       text-align: center;
-      width: 2em;
+      position: absolute;
+      right: 80px;
+      width: 100%;
     }
     a{
-      display: block;
+      text-align: left;
       text-decoration: none;
       color: white;
       margin:2em 2em;
+      width: 90%;
     }
     a:hover{
       border-bottom: 1px solid white;
@@ -61,22 +69,28 @@
 }
 @media (min-width: 960px){
   .container_navbar{
-    height: 100%;
+    height: 10%;
     display: flex;
+    .title_flag{
+      background: none;
+    }
     .container_icon-hamburguer{
       display: none;
     }
     .navbar{
-      height: 20%;
       justify-content: center;
+      background: none;
       align-items: center;
-      right: 0;
+      right: 0%;
       display: flex;
+      backdrop-filter: none;
       width: 50%;
-      margin-top: 5px;
+      height: 100%;
       a{
+        height:80%;
+        width: 10%;
         margin: 0;
-        padding: 5px 2em;
+        padding: 5px;
       }
       .container_icon-exit{
           display: none;
