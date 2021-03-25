@@ -15,12 +15,13 @@
     color: #fcf1f1;
     padding: 5px 20px;
     border-radius: 5px;
-    box-shadow: 2px 2px 2px 3px #ccc;
+    box-shadow: 2px 2px 2px 3px #aa3333;
+    border: none;
 
   }
   .button_back:hover{
     transition: all .1s;
-    box-shadow: 1px 1px 1px 1px #ccc;
+    box-shadow: 1px 1px 1px 1px #aa3333;
     font-size: 15px;
   }
   .container_screen{

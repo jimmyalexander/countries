@@ -18,7 +18,7 @@ export const Principal = () => {
       <div className="carousel-inner">
         <div className="carousel-item active">
           <img src={sudafrica} className="d-block w-100" alt="..." />
-          <div className="carousel-caption d-none d-md-block">
+          <div className="carousel-caption  d-md-block">
             <h5>Desierto de Namib Sudafrica, Africa</h5>
             <p>El desierto del Namib es un importante desierto de África que se extiende a lo largo de la costa de Namibia, entre el río Orange, que marca la frontera
                con la República de Sudáfrica, al sur, y el río Kunene, entre Namibia y Angola, al norte.</p>
@@ -27,16 +27,15 @@ export const Principal = () => {
 
         <div className="carousel-item">
           <img src={paris} className="d-block w-100" alt="..." />
-          <div className="carousel-caption d-none d-md-block">
+          <div className="carousel-caption d-md-block">
             <h5>Paris Francia,Europa</h5>
             <p>París, la capital de Francia, es una importante ciudad europea y un 
               centro mundial del arte, la moda, la gastronomía y la cultura.</p>
           </div>
         </div>
-        americalasvegas
         <div className="carousel-item">
           <img src={india} className="d-block w-100" alt="..." />
-          <div className="carousel-caption d-none d-md-block">
+          <div className="carousel-caption d-md-block">
             <h5>Taj Mahal India, Europa</h5>
             <p>El Taj Mahal ​​ es un monumento funerario construido entre 1631 y 1654 en la ciudad de Agra, estado de Uttar Pradesh, 
               a orillas del río Yamuna, por el emperador musulmán Shah Jahan de la dinastía mogol.</p>
@@ -45,7 +44,7 @@ export const Principal = () => {
 
         <div className="carousel-item">
           <img src={americalasvegas} className="d-block w-100" alt="..." />
-          <div className="carousel-caption d-none d-md-block">
+          <div className="carousel-caption d-md-block">
             <h5>Las Vegas EEU, America</h5>
             <p>Las Vegas, en el desierto de Mojave de Nevada, es una ciudad turística famosa por su activa vida nocturna, 
               que se centra en casinos abiertos las 24 horas del día y otras opciones de entretenimiento.</p>
