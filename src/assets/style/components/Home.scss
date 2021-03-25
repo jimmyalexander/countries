@@ -5,6 +5,9 @@ body{
   margin: 0;
   background: #fec5bb;
 }
+html{
+  overflow-x: hidden;
+}
 .container_world{
   position: relative;
   top: 100px;
