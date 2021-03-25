@@ -16,14 +16,16 @@ export const Navbar = () => {
   }
   return (
     
-    <div className=''>
-      <div className={loca.pathname === '/countries/' 
+    <div className={
+      loca.pathname === '/countries/' 
                       || loca.pathname === '/countries/africa' 
                       || loca.pathname === '/countries/world' 
                       || loca.pathname === '/countries/america'  
                       || loca.pathname === '/countries/asia'
                       || loca.pathname === '/countries/europe' 
-                      || loca.pathname === '/countries/oceania'       ? 'container_navbar ' : 'desaparece'}>
+                      || loca.pathname === '/countries/oceania'  ? 'component_navbar ' : 'desaparece'
+    }>
+      <div className='container_navbar '>
         <div className='title_flag '>
           <Link onClick={ handleExit }  to='/countries/'>
            <h1>FLAGS</h1>

@@ -3,7 +3,7 @@ import { useFetch } from '../CustomHooks/useFetch';
 import { FlagCard } from './FlagCard'
 
 export const OceaniaScreeen = () => {
-  const { data } = useFetch('https://restcountries.eu/rest/v2/region/asia');
+  const { data } = useFetch('https://restcountries.eu/rest/v2/region/oceania');
 
   return (
     <div className='container_world'>
@@ -13,8 +13,8 @@ export const OceaniaScreeen = () => {
 
       <div className='container_card'>
         {
-          data.map(asia => (
-            <FlagCard key={ asia.name} {...asia} />
+          data.map(oceania => (
+            <FlagCard key={ oceania.name} {...oceania} />
           ))
         }
       </div>

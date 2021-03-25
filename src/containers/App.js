@@ -4,7 +4,7 @@ import '../assets/style/App.scss';
 
 export const App= () => {
   return (
-     <div>
+     <div className='app'>
       <AppRouter />
     </div>
   )
