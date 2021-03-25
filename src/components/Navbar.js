@@ -5,7 +5,6 @@ import Icon from './icons/iconos';
 
 export const Navbar = () => {
   const [active, setActive] = useState(false);
-  const [clickactive, setClickactive] = useState(false);
   const loca = useLocation();
   const handleBurguer = () => {
     setActive(!active);
@@ -26,7 +25,7 @@ export const Navbar = () => {
                       || loca.pathname === '/countries/europe' 
                       || loca.pathname === '/countries/oceania'       ? 'container_navbar ' : 'desaparece'}>
         <div className='title_flag '>
-          <Link onClick={ handleExit }  to='/countries'>
+          <Link onClick={ handleExit }  to='/countries/'>
            <h1>FLAGS</h1>
           </Link>
         </div>
