@@ -5,6 +5,7 @@ import Icon from './icons/iconos';
 
 export const Navbar = () => {
   const [active, setActive] = useState(false);
+  const [clickactive, setClickactive] = useState(false);
   const loca = useLocation();
   const handleBurguer = () => {
     setActive(!active);
@@ -16,26 +17,35 @@ export const Navbar = () => {
   }
   return (
     
-    <div>
-      <div className={loca.pathname? 'container_navbar' : 'desaparece'}>
-        <div className='title_flag'>
-          <Link  to='/countries'>
+    <div className=''>
+      <div className={loca.pathname === '/countries' 
+                      || loca.pathname === '/countries/africa' 
+                      || loca.pathname === '/countries/world' 
+                      || loca.pathname === '/countries/america'  
+                      || loca.pathname === '/countries/asia'
+                      || loca.pathname === '/countries/europe' 
+                      || loca.pathname === '/countries/oceania'       ? 'container_navbar ' : 'desaparece'}>
+        <div className='title_flag '>
+          <Link onClick={ handleExit }  to='/countries'>
            <h1>FLAGS</h1>
           </Link>
         </div>
+
         <div onClick={ handleBurguer} className='container_icon-hamburguer'>
           <Icon icon={mdiFormatLineWeight} color={'white'} />
         </div>
+        
         <nav className={ active  ? 'navbar is-active': 'navbar'}>
-           <div  onClick={ handleExit } className='container_icon-exit'>
-            <Icon id='icon' icon={mdiWindowClose} color={'white'}/>
-           </div>
-          <Link  to='/countries/world' >World</Link>
-          <Link  to='/countries/africa'  >Africa</Link>
-          <Link  to='/countries/america'  >America</Link>
-          <Link  to='/countries/asia'  >Asia</Link>
-          <Link  to='/countries/europe'  >Europe</Link>
-          <Link  to='/countries/oceania'  >Oceania</Link>
+          <div  onClick={ handleExit } className='container_icon-exit'>
+           <Icon id='icon' icon={mdiWindowClose} color={'white'}/>
+          </div>
+
+          <Link  onClick={ handleExit }   to='/countries/world' >World</Link>
+          <Link  onClick={ handleExit }  to='/countries/africa'  >Africa</Link>
+          <Link  onClick={ handleExit }  to='/countries/america'  >America</Link>
+          <Link  onClick={ handleExit }  to='/countries/asia'  >Asia</Link>
+          <Link  onClick={ handleExit }  to='/countries/europe'  >Europe</Link>
+          <Link  onClick={ handleExit }  to='/countries/oceania'  >Oceania</Link>
         </nav>
       </div>
     </div>

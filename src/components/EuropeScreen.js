@@ -7,7 +7,10 @@ export const EuropeScreen = () => {
 
   return (
     <div className='container_world'>
-      <h1>EuropeScreen</h1>
+      <div className='title_home'>
+        <h1>EuropeScreen</h1>
+      </div>
+
 
       <div className='container_card'>
         {
