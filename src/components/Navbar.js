@@ -5,7 +5,6 @@ import Icon from './icons/iconos';
 
 export const Navbar = () => {
   const [active, setActive] = useState(false);
-  const [clickactive, setClickactive] = useState(false);
   const loca = useLocation();
   const handleBurguer = () => {
     setActive(!active);
