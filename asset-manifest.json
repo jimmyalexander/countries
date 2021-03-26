@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/countries/static/css/main.7e2071d8.chunk.css",
-    "main.js": "/countries/static/js/main.799e2cd2.chunk.js",
-    "main.js.map": "/countries/static/js/main.799e2cd2.chunk.js.map",
+    "main.css": "/countries/static/css/main.5c4d9e9b.chunk.css",
+    "main.js": "/countries/static/js/main.cd90ee82.chunk.js",
+    "main.js.map": "/countries/static/js/main.cd90ee82.chunk.js.map",
     "runtime-main.js": "/countries/static/js/runtime-main.ed355ce6.js",
     "runtime-main.js.map": "/countries/static/js/runtime-main.ed355ce6.js.map",
     "static/js/2.8724cc6b.chunk.js": "/countries/static/js/2.8724cc6b.chunk.js",
     "static/js/2.8724cc6b.chunk.js.map": "/countries/static/js/2.8724cc6b.chunk.js.map",
     "index.html": "/countries/index.html",
-    "static/css/main.7e2071d8.chunk.css.map": "/countries/static/css/main.7e2071d8.chunk.css.map",
+    "static/css/main.5c4d9e9b.chunk.css.map": "/countries/static/css/main.5c4d9e9b.chunk.css.map",
     "static/js/2.8724cc6b.chunk.js.LICENSE.txt": "/countries/static/js/2.8724cc6b.chunk.js.LICENSE.txt",
     "static/media/americalasvegas.e8b34c78.jpg": "/countries/static/media/americalasvegas.e8b34c78.jpg",
     "static/media/india.da5f05df.jpg": "/countries/static/media/india.da5f05df.jpg",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.ed355ce6.js",
     "static/js/2.8724cc6b.chunk.js",
-    "static/css/main.7e2071d8.chunk.css",
-    "static/js/main.799e2cd2.chunk.js"
+    "static/css/main.5c4d9e9b.chunk.css",
+    "static/js/main.cd90ee82.chunk.js"
   ]
 }
